@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.pedroenju.controller.CalculadoraController">
+  <children>
+    <StackPane prefHeight="60.0" prefWidth="300.0">
+      <children>
+        <Label fx:id="lblResultado" alignment="CENTER_RIGHT" prefHeight="219.0" prefWidth="541.0" text="0" textOverrun="CLIP">
+          <font>
+            <Font name="Arial" size="16.0" />
+          </font>
+        </Label>
+      </children>
+      <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x1" />
+      </padding>
+    </StackPane>
+    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0" spacing="8.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="MOD" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="POT" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="138.0" text="X" textFill="RED">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Button>
+      </children>
+      <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x1" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER" padding="$x1" prefHeight="60.0" prefWidth="300.0" spacing="8.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="7" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="8" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="9" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="/" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0" spacing="8.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="4" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="5" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="6" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="*" />
+      </children>
+      <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x1" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0" spacing="8.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="1" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="2" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="3" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="-" />
+      </children>
+      <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x1" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0" spacing="8.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="0" />
+        <Button mnemonicParsing="false" onAction="#processaNumero" prefHeight="44.0" prefWidth="65.0" text="." />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="=" />
+        <Button mnemonicParsing="false" onAction="#processaOperador" prefHeight="44.0" prefWidth="65.0" text="+" />
+      </children>
+      <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x1" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>
